@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Magicodes.IE.Excel" Version="1.4.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\data\Admin.EntityFrameworkCore\Magicodes.Admin.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

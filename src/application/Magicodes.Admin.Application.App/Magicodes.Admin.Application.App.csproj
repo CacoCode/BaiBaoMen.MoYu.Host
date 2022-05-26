@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSRedisCore" Version="3.6.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Admin.Core.Custom\Magicodes.Admin.Core.Custom.csproj" />
+    <ProjectReference Include="..\..\unity\Admin.Unity\Magicodes.Admin.Unity.csproj" />
+    <ProjectReference Include="..\..\unity\Magicodes.AMap\Magicodes.AMap.csproj" />
+    <ProjectReference Include="..\..\unity\Magicodes.MiniProgram\Magicodes.MiniProgram.csproj" />
+    <ProjectReference Include="..\Admin.Application\Magicodes.Admin.Application.csproj" />
+    <ProjectReference Include="..\Magicodes.Admin.Application.Core\Magicodes.Admin.Application.Core.csproj" />
+  </ItemGroup>
+
+</Project>

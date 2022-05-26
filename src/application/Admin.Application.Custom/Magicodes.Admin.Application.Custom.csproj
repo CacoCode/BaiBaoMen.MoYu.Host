@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <AssemblyName>Magicodes.Admin.Application.Custom</AssemblyName>
+    <RootNamespace>Magicodes.Admin.Application.Custom</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591;</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSRedisCore" Version="3.6.5" />
+    <PackageReference Include="Magicodes.IE.Excel" Version="1.4.4" />
+    <!--<PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />-->
+    <PackageReference Include="QRCoder" Version="1.3.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\unity\Admin.Unity\Magicodes.Admin.Unity.csproj" />
+    <ProjectReference Include="..\..\unity\Magicodes.AMap\Magicodes.AMap.csproj" />
+    <ProjectReference Include="..\..\unity\Magicodes.MiniProgram\Magicodes.MiniProgram.csproj" />
+    <ProjectReference Include="..\Admin.Application\Magicodes.Admin.Application.csproj" />
+    <ProjectReference Include="..\Magicodes.Admin.Application.Core\Magicodes.Admin.Application.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.core\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

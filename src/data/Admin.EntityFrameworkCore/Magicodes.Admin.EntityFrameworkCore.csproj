@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <RootNamespace>Magicodes.Admin.EntityFrameworkCore</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20191101085725_initTable.cs" />
+    <Compile Remove="Migrations\20191101085725_initTable.Designer.cs" />
+    <Compile Remove="Migrations\20191101092233_initTable.cs" />
+    <Compile Remove="Migrations\20191101092233_initTable.Designer.cs" />
+    <Compile Remove="Migrations\20191102021508_add_table_teacherAndCourseRelation.cs" />
+    <Compile Remove="Migrations\20191102021508_add_table_teacherAndCourseRelation.Designer.cs" />
+    <Compile Remove="Migrations\20191124154020_add_Table_TeacherClass_And_Update_Table_Course.cs" />
+    <Compile Remove="Migrations\20191125032403_add_ScheduleCourseTables.cs" />
+    <Compile Remove="Migrations\20191125032803_add_ScheduleCourseTables.cs" />
+    <Compile Remove="Migrations\20191125123200_update_CourseTable.cs" />
+    <Compile Remove="Migrations\20191125123404_update_CourseTable.cs" />
+    <Compile Remove="Migrations\20191127034556_set_ScheduleCourse_bool.cs" />
+    <Compile Remove="Migrations\20201014051615_add_table_ChargeTemplate.cs" />
+    <Compile Remove="Migrations\20201014051615_add_table_ChargeTemplate.Designer.cs" />
+    <Compile Remove="Migrations\20201014051814_add_table_ChargeTemplate.cs" />
+    <Compile Remove="Migrations\20201014051814_add_table_ChargeTemplate.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Dapper" Version="4.6.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Admin.Core.Custom\Magicodes.Admin.Core.Custom.csproj" />
+  </ItemGroup>
+
+</Project>
