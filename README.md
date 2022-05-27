@@ -12,3 +12,6 @@
 - 微信小程序：MiniProgram
 
 ![image](https://user-images.githubusercontent.com/97924970/170446201-5e9a0e46-4af1-4f0c-9f5a-ba3d5fc350d8.png)
+
+## 说明
+请按照开源项目标准的代码提交流程贡献代码。
