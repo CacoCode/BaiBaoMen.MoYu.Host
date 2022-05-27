@@ -1,5 +1,7 @@
 # 摸鱼软件后端逻辑
 
+<a href="https://github.com/CacoCode/BaiBaoMen.MoYu.Host/actions?query=workflow%3ABuild+branch%3Amaster"><img src="https://github.com/CacoCode/BaiBaoMen.MoYu.Host/workflows/Build/badge.svg?branch=master" alt="Github Build Status"></a>
+
 ## 框架
 - 基于 Magicodes.Admin（自己创业时与团队基于ABP 搭建的一套中后台快速开发框架） + .Net Core 2.2 
 
